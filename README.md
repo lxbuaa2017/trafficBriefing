@@ -1,5 +1,6 @@
+### 环境配置
 首先要有python3的环境
-然后pip（或者conda） install scrapy
+然后进入项目根目录，运行pip install -r requirements.txt
 
 ### 运行
 

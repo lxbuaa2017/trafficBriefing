@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
 import datetime
 import json
-
-import docx
-import jieba
-import re
-import jieba
-import time
 import os
 import docx
 from docx import Document
