@@ -14,7 +14,9 @@ class TrafficbriefingItem(scrapy.Item):
     img_urls = scrapy.Field()
     images = scrapy.Field()
 
-    influence_snow = scrapy.Field()
-    influence_fog = scrapy.Field()
-    influence_thunder = scrapy.Field()
+    snow_influenced = scrapy.Field()
+    fog_influenced = scrapy.Field()
+    rain_influenced = scrapy.Field()
+    thunder_influenced = scrapy.Field()
+    other_influenced = scrapy.Field()
     pass
