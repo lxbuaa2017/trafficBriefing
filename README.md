@@ -3,7 +3,7 @@
 
 ### 运行
 
-###### **Linux系统下直接进入项目根目录，运行run.sh脚本即可**
+##Linux系统下直接进入项目根目录，运行run.sh脚本即可
 
 **Windows系统下具体操作为：**
 进入到trafficBriefing/trafficBriefing目录，如果之前跑过爬虫目录下会有brief.json文件，有的话就先删掉
