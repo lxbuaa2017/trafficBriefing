@@ -14,12 +14,12 @@
 然后直接运行briefGenerator文件夹里的trainsition.py 
 将会在该文件夹下生成brief.docx 文档
 
-### 运行
+### 生成物
 
 **简报文件**
 项目根目录下的docx文件，其命名为“xxxx年xx月xx日公路”
 
-**数据样例（即./trafficBriefing/trafficBriefing/brief.json文件）**
+**数据（即./trafficBriefing/trafficBriefing/brief.json文件）**
 [{
 	"img_urls": ["http://image.nmc.cn/product/2020/04/28/TRFC/medium/SEVP_NMC_TRFC_SFER_EME_ACHN_L88_P9_20200428120002400_XML_1.jpg?v=1588066251360"],
 	"snow_influenced": ["受小雪或雨夹雪影响的主要路段有：", "109国道西藏安多—那曲—当雄段", "拉萨境内路段", "219国道新疆大红柳滩境内路段", "西藏萨嘎—昂仁—拉孜段", "318国道西藏工布江达境内路段", "西藏如多—墨竹工卡—达资段", "拉萨—西藏曲水段", "西藏仁布—日喀则—聂拉木段"],
