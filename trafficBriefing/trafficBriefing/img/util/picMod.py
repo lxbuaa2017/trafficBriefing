@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 from PIL import Image
-import datetime
+import time
 import os
 
 p=os.path.dirname(__file__)
@@ -7,8 +8,8 @@ p = p[:-5]
 source = Image.open('{}/util/font.png'.format(p))
 aim = Image.open('{}/0'.format(p))
 aim.paste(source, (300, 50))
-now = datetime.datetime.now()
-date = str(now.year) + '年' + str(now.month) + '月' + str(now.day) + '日' + "全国交通气象预报"
+date = time.strftime('%Y{y}%m{m}%d{d}',time.localtime(time.time())).format(y='年',m='月',d='日')
+
 
 aim.save(('{}/'+date + '.png').format(p))
 os.remove('{}/0'.format(p))

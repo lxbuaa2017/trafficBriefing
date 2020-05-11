@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import datetime
+import time
 import json
 import os
 import docx
@@ -48,16 +48,14 @@ with open('{}/trafficBriefing/trafficBriefing/brief.json'.format(p), 'r', encodi
     raw_list = json.load(fObj)
     raw = raw_list[-1]
 
-now = datetime.datetime.now()
-date = str(now.year) + '年' + str(now.month) + '月' + str(now.day) + '日'
+date = time.strftime('%Y{y}%m{m}%d{d}',time.localtime(time.time())).format(y='年',m='月',d='日')
 path='{}/'.format(p)+date+"公路.docx"
 if os.path.exists(path):  # 如果文件存在
     os.remove(path)  
 fd = open(path, mode="w", encoding="utf-8")
 fd.close()
 document=Document()
-now = datetime.datetime.now()
-img_url = "{}/trafficBriefing/trafficBriefing/img/".format(p)+str(now.year) + '年' + str(now.month) + '月' + str(now.day) + '日' + "全国交通气象预报"+".png"
+img_url = "{}/trafficBriefing/trafficBriefing/img/".format(p)+date+ '.png'
 document.add_picture(img_url, width=Inches(6.0748031))
 
 
